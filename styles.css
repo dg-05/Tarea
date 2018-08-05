@@ -38,16 +38,65 @@ html,body{
 }
 
 .menu{
-    -webkit-filter: url("#shadowed-goo");
-    filter: url("#shadowed-goo");
+    -webkit-filter: url(#shadowed-goo);
+    filter: url(#shadowed-goo);
+    position: fixed;
+    width: 20%;
+    height: 20%;
+    bottom: 3%;
+    right: 2%;
 }
 
-.burger{
-    width: 6%;
+.menu-item{
+    width: 28%;
     background: crimson;
-    padding-top: 8%;
-    position: fixed;
+    position: absolute;
     border-radius: 50%;
-    right: 1%;
-    top: 85%;
+    right: 0;
+    padding: 20% 0;
+    bottom: 0;
+}
+
+.menu .menu-item:not(:first-child){
+    right: 5%;
+    width: 17%;
+    padding-top: 5%;
+}
+
+.burger div{
+    width: 70%;
+    height: 7%;
+    background: white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.barOne {
+    top: 35%;
+    left: 16%;
+}
+
+.barTwo{
+    left: 16%;
+}
+
+
+.barThree {
+    left: 16%;
+    bottom: 28%;
+}
+
+.change .barOne {
+    -webkit-transform: rotate(-51deg) translate(-21%, 100%);
+    transform: rotate(-51deg) translate(-21%, 100%);
+}
+.change .barTwo {
+    opacity: 0;
+}
+
+.change .barThree {
+    -webkit-transform: rotate(51deg) translate(-28%, -126%);
+    transform:  rotate(51deg) translate(-28%, -126%);
 }
