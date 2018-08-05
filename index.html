@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Tarea</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<script src="styles.js" type="text/javascript" charset="utf-8"></script>
-	<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -25,7 +25,7 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-			<div class="menu">
+			<div class="menu"  onclick="changeMenu(this)">
 				<span class="burger menu-item" onclick="changeBurger(this)">
 					<div class="barOne" id="test">
 					</div>
@@ -34,7 +34,9 @@
 					<div class="barThree" id="test">
 					</div>
 				</span>
-				<span class="word menu-item"></span>
+				<span class="word menu-item">
+					<i class="far fa-file-word fa-2x"></i>
+				</span>
 				<span class="videoLink menu-item"></span>
 				<span class="other menu-item"></span>
 			</div>

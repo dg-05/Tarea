@@ -59,8 +59,15 @@ html,body{
 
 .menu .menu-item:not(:first-child){
     right: 5%;
-    width: 17%;
-    padding-top: 5%;
+    width: 18%;
+    padding-top: 8%;
+    transition: .5s;
+    padding-left: 4%;
+    padding-bottom: 6%;
+}
+
+.burger:hover{
+    cursor: pointer;
 }
 
 .burger div{
@@ -99,4 +106,25 @@ html,body{
 .change .barThree {
     -webkit-transform: rotate(51deg) translate(-28%, -126%);
     transform:  rotate(51deg) translate(-28%, -126%);
+}
+
+.word{
+    opacity: 0;
+    transition: .5s;
+}
+
+.videoLink{
+    opacity: 0;
+    transition: .5s;
+}
+
+.change-menu .word{
+    left: 53%;
+    transition: .5s;
+    opacity: 1;
+}
+
+.change-menu .videoLink{
+    bottom: 57%;
+    opacity: 1;
 }
