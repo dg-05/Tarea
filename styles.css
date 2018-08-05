@@ -3,6 +3,7 @@ html,body{
 	height: 100%;
 }
 
+
 .logo{
     width: 100%;
     height: 50%;
@@ -127,4 +128,9 @@ html,body{
 .change-menu .videoLink{
     bottom: 57%;
     opacity: 1;
+    width: 22% !important;
+}
+
+a{
+    color: black;
 }
